@@ -1,0 +1,25 @@
+// 定義常用的斷點
+$breakpoints: (
+  'mobile': 768px,
+  'tablet': 992px,
+  'desktop': 1320px,
+);
+
+// 各斷點的響應式Mixin
+@mixin mobile {
+  @media (max-width: map-get($breakpoints, 'mobile')) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: map-get($breakpoints, 'tablet')) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: map-get($breakpoints, 'desktop')) {
+    @content;
+  }
+}

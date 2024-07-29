@@ -1,0 +1,249 @@
+/* banner */
+.section-banner {
+  background-image: url(../images/home-header.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 787px;
+  @include mobile {
+    background-image: url(../images/home-header-sm.png);
+    height: 396px;
+  }
+}
+
+.section-banner .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-content {
+  text-align: end;
+  line-height: 1.5;
+  color: $secondary;
+}
+
+.banner-content p {
+  font-size: 36px;
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+.banner-content h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.banner-content a {
+  display: inline-block;
+  font-size: 20px;
+  background: $primary;
+  color: $accent_secondary;
+  padding: 5px 12px;
+}
+
+/* section-profession */
+.section-profession .main-content {
+  margin-top: 0px;
+}
+
+.section-profession .list-item {
+  text-align: center;
+}
+
+.section-profession .list-item img {
+  width: 100px;
+  height: 100px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.section-profession .list-item h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  color: $secondary;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.section-profession .list-item p {
+  text-align: left;
+}
+
+.section-classic .list-item {
+  margin-bottom: 24px;
+}
+
+.section-classic .list-item .pic {
+  max-width: 416px;
+  margin-top: 48px;
+  margin-bottom: 8px;
+  margin: auto;
+}
+
+.section-classic .list-item p {
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic;
+  color: $primary;
+  text-align: center;
+}
+
+/* section-co_branding */
+.section-co_branding {
+  background: url(../images/index-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include tablet {
+    background-image: url(../images/index-bg-md.png);
+  }
+
+  @include mobile {
+    background-image: url(../images/index-bg-sm.png);
+  }
+}
+
+.section-co_branding .main-title {
+  color: $accent_secondary;
+}
+
+.section-co_branding .main-content .list-item:nth-child(1) {
+  padding-right: 0;
+
+  @include tablet {
+    padding-right: 12px;
+  }
+}
+
+.section-co_branding .main-content .list-item:nth-child(2) {
+  padding-left: 0px;
+
+  @include tablet {
+    margin-top: 24px;
+    padding-left: 12px;
+  }
+}
+
+.section-co_branding .list-item images {
+  object-fit: cover;
+  width: 100%;
+  height: 240px;
+}
+
+.section-co_branding .list-item p {
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic;
+  color: $primary;
+  text-align: center;
+  background: $accent_secondary;
+  padding: 8px 0px;
+}
+
+/* section-recommend */
+.section-recommend .card-list {
+  row-gap: 24px;
+  @include mobile {
+    row-gap: 16px;
+  }
+}
+
+.section-recommend .list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-recommend .list-item .desc {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #dee2e6;
+  border-radius: 0px 0px 4px 4px;
+  height: 100%;
+  min-height: 205px;
+}
+
+.section-recommend .list-item span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-recommend .list-item time {
+  margin-top: auto;
+  font-size: 14px;
+  color: #707070;
+}
+
+/* section-contact */
+.section-contact .main-content {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-contact .main-content p {
+  font-size: 20px;
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.section-contact .main-content > label {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.section-contact .main-content input {
+  font-size: 16px;
+  padding: 6px 12px;
+  background-color: transparent;
+}
+.section-contact .main-content textarea {
+  font-size: 16px;
+  padding: 6px 12px;
+  background-color: transparent;
+}
+
+.section-contact .check_privacy {
+  margin-top: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.section-contact .check_privacy input {
+  width: 24px;
+  height: 24px;
+  margin: 0px 4px 0px 0px;
+}
+
+.section-contact .main-content button {
+  width: 416px;
+  height: 56px;
+  margin: auto;
+  margin-top: 48px;
+  background-color: $primary;
+  color: $accent_secondary;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  @include tablet {
+    width: 336px;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}

@@ -1,0 +1,67 @@
+.bg_light {
+  background: $bg_light;
+}
+
+.bg_primary {
+  background: $primary;
+}
+
+.en-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -12px;
+}
+
+.card-list .list-item {
+  padding: 0px 12px;
+}
+
+.list-item-25 {
+  width: 25%;
+}
+.list-item-33 {
+  width: 33.33%;
+}
+.list-item-50 {
+  width: 50%;
+}
+@include tablet {
+  .list-item-md-50 {
+    width: 50%;
+  }
+  .list-item-md-83 {
+    width: 576px;
+  }
+  .list-item-md-100 {
+    width: 100%;
+  }
+}
+@include mobile {
+  .list-item-sm-100 {
+    width: 100%;
+  }
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: $secondary;
+  text-align: center;
+
+  @include mobile {
+    font-size: 24px;
+  }
+}
+
+.main-content {
+  margin-top: 48px;
+
+  @include mobile {
+    margin-top: 24px;
+  }
+}

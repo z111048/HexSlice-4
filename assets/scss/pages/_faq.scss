@@ -1,0 +1,88 @@
+.section-faq {
+  padding-top: 96px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+
+  @include tablet {
+    padding-top: 80px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+
+  .container_faq {
+    max-width: 1320px;
+    margin: 0 auto;
+
+    @include desktop {
+      padding: 12px;
+    }
+
+    @include tablet {
+      padding: 36px;
+    }
+
+    @include mobile {
+      padding: 12px;
+    }
+  }
+}
+
+.main-title.faq {
+  margin-bottom: 32px;
+  border-left: 8px solid $primary;
+  padding-left: 13px;
+  @include mobile {
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: left;
+    color: $accent_primary;
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+}
+
+.main-content.faq {
+  width: 856px;
+  margin-top: 0px;
+  @include tablet {
+    width: auto;
+  }
+
+  .common_problem {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: $accent_primary;
+  }
+
+  .faq-list {
+    .list-item {
+      margin-bottom: 32px;
+      @include mobile {
+        margin-bottom: 24px;
+      }
+
+      h2 {
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+    }
+
+    .list-item:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+}
